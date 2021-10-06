@@ -2,6 +2,9 @@
 
 namespace GIGABAIT\PterodactylAPI;
 use GIGABAIT\PterodactylAPI\Aplications\Servers;
+use GIGABAIT\PterodactylAPI\Aplications\Locations;
+use GIGABAIT\PterodactylAPI\Aplications\Users;
+use GIGABAIT\PterodactylAPI\Aplications\Databases;
 
 class PteroAPI
 {
@@ -9,6 +12,9 @@ class PteroAPI
 	public $url;
 
 	public $servers;
+	public $locations;
+	public $users;
+	public $databases;
 
 	public function __construct($api_key, $base_url)
 	{
@@ -17,5 +23,8 @@ class PteroAPI
 		$this->url = $base_url;
 
 		$this->servers = new Servers($this->api, $this->url);
+		$this->locations = new Locations($this->api, $this->url);
+		$this->users = new Users($this->api, $this->url);
+		$this->databases = new Databases($this->api, $this->url);
 	}
 }

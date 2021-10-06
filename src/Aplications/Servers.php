@@ -45,10 +45,6 @@ class Servers
 			'api/application/servers', 
 			array('form_params' => $params)
 		);
-
-
-
-
 		return json_decode($resp->getBody()->getContents(), true);
 	}
 }
