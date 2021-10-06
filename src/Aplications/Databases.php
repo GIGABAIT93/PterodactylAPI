@@ -4,7 +4,7 @@ namespace GIGABAIT\PterodactylAPI\Aplications;
 
 use GuzzleHttp\Client;
 
-class Databasesws
+class Databases
 {
 	public function __construct($key, $url)
 	{

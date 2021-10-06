@@ -4,7 +4,7 @@ namespace GIGABAIT\PterodactylAPI\Aplications;
 
 use GuzzleHttp\Client;
 
-class Locatios
+class Locations
 {
 	public function __construct($key, $url)
 	{
