@@ -1,5 +1,5 @@
 {
-	"name": "gigabait/pterodactylapi",
+	"name": "gigabait/pterodactyl-api",
 	"license": "MIT",
 	"authors": [
 		{
@@ -8,7 +8,8 @@
 		}
 	],
 	"require": {
-		"guzzlehttp/guzzle": "^7.3"
+		"guzzlehttp/guzzle": "^7.3",
+		"gigabait/pterodactyl-api": "dev-master"
 	},
 	"autoload": {
 		"psr-4": {
