@@ -1,3 +1,4 @@
 composer.phar
 /vendor/
 index.php
+.gitignore
