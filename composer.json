@@ -9,7 +9,8 @@
 	],
 	"require": {
 		"guzzlehttp/guzzle": "^7.3",
-		"gigabait/pterodactyl-api": "dev-master"
+		"gigabait/pterodactyl-api": "dev-master",
+		"gigabait/pterodactyl": "dev-master"
 	},
 	"autoload": {
 		"psr-4": {
