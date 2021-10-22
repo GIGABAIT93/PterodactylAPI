@@ -3,6 +3,7 @@
 namespace GIGABAIT\PterodactylAPI;
 use GIGABAIT\PterodactylAPI\Aplications\Servers;
 use GIGABAIT\PterodactylAPI\Aplications\Locations;
+use GIGABAIT\PterodactylAPI\Aplications\Allocations;
 use GIGABAIT\PterodactylAPI\Aplications\Users;
 use GIGABAIT\PterodactylAPI\Aplications\Databases;
 
@@ -13,6 +14,7 @@ class PteroAPI
 
 	public $servers;
 	public $locations;
+	public $allocations;
 	public $users;
 	public $databases;
 
@@ -24,6 +26,7 @@ class PteroAPI
 
 		$this->servers = new Servers($this->api, $this->url);
 		$this->locations = new Locations($this->api, $this->url);
+		$this->allocations = new Allocations($this->api, $this->url);
 		$this->users = new Users($this->api, $this->url);
 		$this->databases = new Databases($this->api, $this->url);
 	}

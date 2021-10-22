@@ -20,4 +20,15 @@ class Locations
 			],
 		]);
 	}
+
+	public function getAll()
+	{
+		$resp = $this->client->get('api/application/locations');
+		return json_decode($resp->getBody()->getContents(), true);
+	}
+
+	public function get(int $id)
+	{
+		return $this->client->get('api/application/locations/' . $id)->getStatusCode();
+	}
 }
